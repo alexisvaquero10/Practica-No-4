@@ -1,0 +1,65 @@
+#include <stdio.h>
+#include <conio.h>
+#include <windows.h>
+int a,i,b,s,sm,x,p;
+// Funcion con Parametros.
+int sumaDeDosNumeros (int numero1,int numero2)
+{
+s = numero1+numero2;
+return (s);
+}
+
+main () 
+{
+a=1;
+i=1;
+b=1;
+
+printf ("inserta un primer numero: ");
+scanf ("%d",&x);
+printf ("\n inserta un segundo numero: ");
+scanf ("%d",&p);
+
+    //While Estructura para imprimir numeros del [1...100]
+	while (a <=100 )
+	{
+	printf("\t");
+	printf("%d",a);
+	printf("\n");
+	Sleep (30); 
+	a++;
+	
+	
+	
+	}
+		//While Estructura para imprimir numeros impares .
+		while (i < 100)
+		{
+	    printf("%d\t",i);
+	    i=i+2;
+		Sleep (100); 
+	    
+			
+			
+			
+		}
+			//  Do-While estructura.
+			do 
+			{
+			printf("%d",b);
+	        printf (" ");
+			b++;
+		    Sleep (50);	
+		 	
+			}
+			while (b <= 50);
+	
+				//suma de dos numeros por funcion
+				sm = sumaDeDosNumeros (x,p);
+				printf("\n");
+				printf ("la suma de tus numeros ingresados es: ");
+				printf ("%d",sm);
+				
+				
+getch ();	
+}
